@@ -62,6 +62,7 @@ body {
   color: var(--clr-grey-1);
   line-height: 1.5;
   font-size: 0.875rem;
+  overflow-x: hidden;
 }
 
 ul {
@@ -176,7 +177,6 @@ p {
 	width: 90vw;
 	margin: 0 auto;
 	max-width: 1170px;
-	/* overflow-x: auto; */
 }
 
 @media screen and (min-width:992) {
@@ -205,7 +205,7 @@ Navbar
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	background-color: var(--clr-white);
 	box-shadow: var(--dark-shadow);
 	z-index: 3;
@@ -332,8 +332,8 @@ Hero
 } */
 
 .hero {
-	width: 100%;
-	min-height: 100%;
+	width: 100vw;
+	min-height: 100vh;
 	background: var(--clr-primary-5);
 	display: flex;
 	justify-content: center;
@@ -343,7 +343,7 @@ Hero
 .hero-banner {
 	text-align: center;
 	color: var(--clr-white);
-	padding: 0 3rem;
+	padding: 0 i.5rem;
 }
 
 .hero-banner h1 {
@@ -624,6 +624,7 @@ Contact
 
 .contact-form {
 	display: flex;
+	/* flex-wrap: wrap; */
 	max-width: 28rem;
 }
 
@@ -633,7 +634,7 @@ Contact
 }
 
 .form-control, .btn-submit {
-	padding: 0.2rem 0.6rem;
+	padding: 0.375rem 0.75rem;
 	font-size: 0.9rem;
 	line-height: 1.5;
 	font-weight: 300;
@@ -667,6 +668,10 @@ Contact
 		/* flex-wrap: wrap; */
 		justify-content: space-between;
 	}
+
+	/* .contact-title {
+		flex: 1 1 auto;
+	} */
 
 	.contact-form {
 		align-self: flex-start;
