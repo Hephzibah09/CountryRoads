@@ -208,7 +208,7 @@ Navbar
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
+	width: 100%;
 	background-color: var(--clr-white);
 	box-shadow: var(--dark-shadow);
 	z-index: 3;
@@ -342,7 +342,7 @@ Hero
 } */
 
 .hero {
-	width: 100vw;
+	width: 100%;
 	min-height: 100vh;
 	background: var(--clr-primary-5);
 	display: flex;
