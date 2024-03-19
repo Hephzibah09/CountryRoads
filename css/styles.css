@@ -192,9 +192,12 @@ Navbar
 ===============
 */
 
+
 .navlogo {
 	font-weight: 900;
-	font-size: 1.5rem;
+	font-size: 1rem;
+	align-self: center;
+	margin-bottom: 0;
 }
 
 .nav-span {
@@ -205,7 +208,7 @@ Navbar
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: 100vw;
 	background-color: var(--clr-white);
 	box-shadow: var(--dark-shadow);
 	z-index: 3;
@@ -267,6 +270,13 @@ Navbar
 .show-links {
 	height: 280px;
 }
+
+@media screen and (min-width: 400px) {
+	.navlogo {
+		font-size: 1.5rem;
+	}
+}
+
 
 @media screen and (min-width:992px) {
 	.navlogo {
@@ -360,7 +370,7 @@ Hero
 
 .hero-btn {
 	padding: 0.9rem 1.6rem;
-	font-size: 1.25rem;
+	font-size: 1.2rem;
 	background-color: var(--clr-white);
 	color: var(--clr-primary-5);
 }
