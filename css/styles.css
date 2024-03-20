@@ -225,6 +225,10 @@ Navbar
 }
 
 .nav-header {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -634,14 +638,30 @@ Contact
 }
 
 .contact-form {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
 	display: flex;
 	/* flex-wrap: wrap; */
 	max-width: 28rem;
 }
 
 .form-control {
+	-webkit-box-flex: 1 1 auto;
+	-moz-box-flex: 1 1 auto;
+	-webkit-flex: 1 1 auto;
+	-ms-flex: 1 1 auto;
 	flex: 1 1 auto;
 	color: var(--clr-grey-5);
+}
+
+.btn-submit {
+	-webkit-box-flex: 1 1 20%;
+	-moz-box-flex: 1 1 20%;
+	-webkit-flex: 1 1 20%;
+	-ms-flex: 1 1 20%;
+	flex: 1 1 20%;
 }
 
 .form-control, .btn-submit {
